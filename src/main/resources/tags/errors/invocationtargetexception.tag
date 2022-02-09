@@ -1,4 +1,4 @@
-type: text
+type: issue-only
 issues: Caused by: java.lang.IllegalArgumentException: Name and ID cannot both be blank
 
 ---

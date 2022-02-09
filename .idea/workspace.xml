@@ -4,65 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb51bd0-cc4a-4e8e-9532-b26a075fd183" name="Changes" comment="projectg">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tags/roles/geyserupdater.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bot.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/errors/invocationtargetexception" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tags/errors/invocationtargetexception.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/help/beta.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/help/commandfreezing.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/help/commands.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/help/domain.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/help/ip.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/account.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/accountlinking.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/anticheat.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/api.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/bedrockplayermanagement.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/bstats.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/bukkit.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/bungee.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/comingsoon.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/create.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/developerguide.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/floodgateskins.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/geyserconnect.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/mods.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/olderversions.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/prefix.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/resourcepacks.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/spigotmovementfix.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/testserver.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/info/update.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/android.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/bedrocklinux.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/common-issues.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/config.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/configeditor.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/consoles.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/currentlimitations.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/donate.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/faq.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/feature.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/issue.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/openthefloodgates.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/placeholderapi.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/providers.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/rpconvert.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/setup.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/startup.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/termux.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/translate.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/uuid.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/viaversion.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/links/whitelist.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/roles/news.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/roles/tester.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tags/roles/crossplatforms.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/dump.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/eta.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tags/util/eta.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/fulldump.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/logsdump.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/mcsrvstatus.tag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tags/util/ping.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tags/util/ping.tag" afterDir="false" />
+    <list default="true" id="8eb51bd0-cc4a-4e8e-9532-b26a075fd183" name="Changes" comment="clean up files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +93,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644410403981</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clean up tags">
+      <created>1644419616739</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644419616739</updated>
+    </task>
+    <task id="LOCAL-00005" summary="clean up tags">
+      <created>1644419712174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644419712174</updated>
+    </task>
+    <task id="LOCAL-00006" summary="clean up files">
+      <created>1644419808186</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1644419808186</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +130,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="projectg" />
-    <option name="LAST_COMMIT_MESSAGE" value="projectg" />
+    <MESSAGE value="clean up tags" />
+    <MESSAGE value="clean up files" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up files" />
   </component>
 </project>
