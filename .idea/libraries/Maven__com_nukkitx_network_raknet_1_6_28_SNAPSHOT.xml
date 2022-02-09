@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.nukkitx.network:raknet:1.6.28-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/nukkitx/network/raknet/1.6.28-SNAPSHOT/raknet-1.6.28-20220125.214016-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/nukkitx/network/raknet/1.6.28-SNAPSHOT/raknet-1.6.28-20220125.214016-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/nukkitx/network/raknet/1.6.28-SNAPSHOT/raknet-1.6.28-20220125.214016-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

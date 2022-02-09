@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.rtm516:minecraft-server-ping:c61c496104">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/rtm516/minecraft-server-ping/c61c496104/minecraft-server-ping-c61c496104.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/rtm516/minecraft-server-ping/c61c496104/minecraft-server-ping-c61c496104-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/rtm516/minecraft-server-ping/c61c496104/minecraft-server-ping-c61c496104-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
