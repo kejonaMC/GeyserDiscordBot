@@ -49,18 +49,13 @@ public class DownloadCommand extends SlashCommand {
     public DownloadCommand() {
         this.name = "download";
         this.arguments = "[program]";
-        this.help = "Sends a link to download the latest version of Geyser or another program";
+        this.help = "Sends a link to download the latest version of GeyserUpdater or another program";
         this.guildOnly = false;
 
-        this.defaultDownloadOption = new GeyserDownloadOption("Geyser", "https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/");
+        this.defaultDownloadOption = new GeyserDownloadOption("GeyserUpdater", "https://ci.projectg.dev/job/GeyserUpdater/job/main/");
         this.optionsToRepository = ImmutableMap.<String, DownloadOption>builder()
-                .put("geyser", this.defaultDownloadOption)
-                .put("floodgate", new GeyserDownloadOption("Floodgate", "https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/"))
-                .put("geyseroptionalpack", new GeyserDownloadOption("GeyserOptionalPack", "https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/"))
-                .put("geyser-fabric", new FabricDownloadOption("Geyser-Fabric", "https://ci.opencollab.dev/job/GeyserMC/job/Geyser-Fabric/job/java-1.18/"))
-                .put("floodgate-fabric", new FabricDownloadOption("Floodgate-Fabric", "https://ci.opencollab.dev/job/GeyserMC/job/Floodgate-Fabric/job/master/"))
-                .put("paper", new DownloadOption("Paper", "https://papermc.io/downloads", "https://github.com/PaperMC.png"))
-                .put("viaversion", new DownloadOption("ViaVersion", "https://ci.viaversion.com/job/ViaVersion/", "https://github.com/ViaVersion.png"))
+                .put("geyserupdater", this.defaultDownloadOption)
+                .put("crossplatforms", new GeyserDownloadOption("CrossplatForms", "https://ci.projectg.dev/job/CrossplatForms/job/main/"))
                 .build();
 
         List<Command.Choice> choices = new ArrayList<>();
@@ -79,7 +74,7 @@ public class DownloadCommand extends SlashCommand {
     protected void execute(CommandEvent event) {
         List<String> args = new ArrayList<>(Arrays.asList(event.getArgs().split(" ")));
 
-        String program = "geyser";
+        String program = "geyserupdater";
         if (!args.get(0).isEmpty()) {
             program = args.get(0);
         }
@@ -96,7 +91,7 @@ public class DownloadCommand extends SlashCommand {
 
     @Override
     protected void execute(SlashCommandEvent event) {
-        String program = event.optString("program", "geyser");
+        String program = event.optString("program", "geyserupdater");
 
         DownloadOption downloadOption = optionsToRepository.getOrDefault(program.toLowerCase(Locale.ROOT), this.defaultDownloadOption);
 
@@ -122,13 +117,13 @@ public class DownloadCommand extends SlashCommand {
 
     private static class GeyserDownloadOption extends DownloadOption {
         public GeyserDownloadOption(String friendlyName, String downloadUrl) {
-            super(friendlyName, downloadUrl, "https://github.com/GeyserMC.png");
+            super(friendlyName, downloadUrl, "https://avatars.githubusercontent.com/u/82118729?s=400&u=201b4e3c50af3ad09264ef69ac7f32b2190fd92b&v=4");
         }
     }
 
     private static class FabricDownloadOption extends DownloadOption {
         public FabricDownloadOption(String friendlyName, String downloadUrl) {
-            super(friendlyName, downloadUrl, "https://github.com/FabricMC.png");
+            super(friendlyName, downloadUrl, "https://avatars.githubusercontent.com/u/82118729?s=400&u=201b4e3c50af3ad09264ef69ac7f32b2190fd92b&v=4");
         }
     }
 }

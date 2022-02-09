@@ -40,11 +40,8 @@ import net.dv8tion.jda.api.requests.restaction.MessageAction;
 import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
-import org.geysermc.discordbot.health_checker.HealthCheckerManager;
-import org.geysermc.discordbot.http.Server;
 import org.geysermc.discordbot.listeners.BadLinksHandler;
 import org.geysermc.discordbot.listeners.CommandErrorHandler;
-import org.geysermc.discordbot.listeners.DumpHandler;
 import org.geysermc.discordbot.listeners.ErrorAnalyzer;
 import org.geysermc.discordbot.listeners.FileHandler;
 import org.geysermc.discordbot.listeners.LevelHandler;
@@ -60,17 +57,14 @@ import org.geysermc.discordbot.storage.StorageType;
 import org.geysermc.discordbot.tags.TagsListener;
 import org.geysermc.discordbot.tags.TagsManager;
 import org.geysermc.discordbot.updates.UpdateManager;
-import org.geysermc.discordbot.util.BotHelpers;
 import org.geysermc.discordbot.util.PropertiesManager;
 import org.geysermc.discordbot.util.RssFeedManager;
 import org.geysermc.discordbot.util.SentryEventManager;
-import org.json.JSONArray;
 import org.kohsuke.github.GitHub;
 import org.kohsuke.github.GitHubBuilder;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pw.chew.chewbotcca.util.RestClient;
 
 import javax.security.auth.login.LoginException;
 import java.io.FileInputStream;
@@ -96,7 +90,6 @@ public class GeyserBot {
 
     private static JDA jda;
     private static GitHub github;
-    private static Server httpServer;
 
     static {
         // Gathers all commands from "commands" package.
@@ -221,7 +214,6 @@ public class GeyserBot {
                             new PersistentRoleHandler(),
                             new FileHandler(),
                             new LevelHandler(),
-                            new DumpHandler(),
                             new ErrorAnalyzer(),
                             new ShutdownHandler(),
                             new VoiceGroupHandler(),
@@ -237,22 +229,8 @@ public class GeyserBot {
         // Register listeners
         jda.addEventListener();
 
-        // Setup the http server
-        if (PropertiesManager.enableWeb()) {
-            try {
-                httpServer = new Server();
-                httpServer.start();
-            } catch (Exception e) {
-                // TODO
-                e.printStackTrace();
-            }
-        }
-
         // Setup the update check scheduler
         UpdateManager.setup();
-
-        // Setup the health check scheduler
-        HealthCheckerManager.setup();
 
         // Setup the rss feed check scheduler
         RssFeedManager.setup();
@@ -268,11 +246,8 @@ public class GeyserBot {
 
         // Start the bStats tracking thread
         generalThreadPool.scheduleAtFixedRate(() -> {
-            JSONArray servers = new JSONArray(RestClient.get("https://bstats.org/api/v1/plugins/5273/charts/servers/data"));
-            JSONArray players = new JSONArray(RestClient.get("https://bstats.org/api/v1/plugins/5273/charts/players/data"));
-            int serverCount = servers.getJSONArray(servers.length() - 1).getInt(1);
-            int playerCount = players.getJSONArray(players.length() - 1).getInt(1);
-            jda.getPresence().setActivity(Activity.playing(BotHelpers.coolFormat(serverCount) + " servers, " + BotHelpers.coolFormat(playerCount) + " players"));
+
+            jda.getPresence().setActivity(Activity.playing("Chilling in ProjectG server!"));
         }, 5, 60 * 5, TimeUnit.SECONDS);
     }
 
@@ -288,13 +263,8 @@ public class GeyserBot {
         return generalThreadPool;
     }
 
-    public static Server getHttpServer() {
-        return httpServer;
-    }
-
     public static void shutdown() {
         storageManager.closeStorage();
         generalThreadPool.shutdown();
-        httpServer.stop();
     }
 }
