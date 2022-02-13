@@ -2,7 +2,7 @@ type: text
 
 ---
 
-If you have a possible plugin interfering with Geyser or Floodgate, follow these steps to find the culprit plugin:
+If you have a possible plugin interfering with one of our plugins, follow these steps to find the culprit plugin:
 - Temporarily remove/move half of your plugins from your server's plugins folder.
 - *If the problem persists*, remove another half.
 - *If the problem goes away*, swap that half of your plugins with the other half.
