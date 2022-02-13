@@ -44,7 +44,6 @@ import org.geysermc.discordbot.listeners.BadLinksHandler;
 import org.geysermc.discordbot.listeners.CommandErrorHandler;
 import org.geysermc.discordbot.listeners.ErrorAnalyzer;
 import org.geysermc.discordbot.listeners.FileHandler;
-import org.geysermc.discordbot.listeners.LevelHandler;
 import org.geysermc.discordbot.listeners.LogHandler;
 import org.geysermc.discordbot.listeners.PersistentRoleHandler;
 import org.geysermc.discordbot.listeners.ShutdownHandler;
@@ -213,7 +212,6 @@ public class GeyserBot {
                             new SwearHandler(),
                             new PersistentRoleHandler(),
                             new FileHandler(),
-                            new LevelHandler(),
                             new ErrorAnalyzer(),
                             new ShutdownHandler(),
                             new VoiceGroupHandler(),
@@ -245,10 +243,7 @@ public class GeyserBot {
         }, 5, TimeUnit.SECONDS);
 
         // Start the bStats tracking thread
-        generalThreadPool.scheduleAtFixedRate(() -> {
-
-            jda.getPresence().setActivity(Activity.playing("Chilling in ProjectG server!"));
-        }, 5, 60 * 5, TimeUnit.SECONDS);
+        generalThreadPool.scheduleAtFixedRate(() -> jda.getPresence().setActivity(Activity.playing("Chilling in ProjectG server!")), 5, 60 * 5, TimeUnit.SECONDS);
     }
 
     public static JDA getJDA() {

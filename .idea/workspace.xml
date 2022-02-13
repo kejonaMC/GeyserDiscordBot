@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb51bd0-cc4a-4e8e-9532-b26a075fd183" name="Changes" comment="clean up files">
+    <list default="true" id="8eb51bd0-cc4a-4e8e-9532-b26a075fd183" name="Changes" comment="svg change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geysermc/discordbot/GeyserBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geysermc/discordbot/GeyserBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geysermc/discordbot/commands/LevelCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geysermc/discordbot/listeners/LevelHandler.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644419808186</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="svg change">
+      <created>1644672047454</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1644672047454</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +142,7 @@
     <MESSAGE value="projectg" />
     <MESSAGE value="clean up tags" />
     <MESSAGE value="clean up files" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up files" />
+    <MESSAGE value="svg change" />
+    <option name="LAST_COMMIT_MESSAGE" value="svg change" />
   </component>
 </project>
