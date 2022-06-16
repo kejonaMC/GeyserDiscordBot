@@ -15,7 +15,7 @@ pipeline {
         stage('Post') {
             steps {
                 archiveArtifacts 'target/GeyserBot*.jar'
-                discordSend description: "**Build:** [${currentBuild.id}](${env.BUILD_URL})\n**Status:** [${currentBuild.currentResult}]" , footer: 'ProjectG', link: env.BUILD_URL, result: currentBuild.currentResult, title: "ProjectG/GeyserBlockJavaPlayers/${env.BRANCH_NAME}", webhookURL: "${env.DISCORD_WEBHOOK}"
+                discordSend description: "**Build:** [${currentBuild.id}](${env.BUILD_URL})\n**Status:** [${currentBuild.currentResult}]" , footer: 'ProjectG', link: env.BUILD_URL, result: currentBuild.currentResult, title: "ProjectG/GeyserDiscordBot/${env.BRANCH_NAME}", webhookURL: "${env.DISCORD_WEBHOOK}"
             }
         }
     }
